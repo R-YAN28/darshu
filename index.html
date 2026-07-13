@@ -2076,7 +2076,7 @@ Click Any Song
 
 <!--==================== AUDIO ====================-->
 
-<audio id="clickSound">
+<!-- <audio id="clickSound">
 
     <source src="assets/click.mp3" type="audio/mpeg">
 
@@ -2086,7 +2086,7 @@ Click Any Song
 
     <source src="assets/surprise.mp3" type="audio/mpeg">
 
-</audio>
+</audio> -->
 
 <!--==================== JAVASCRIPT ====================-->
 
@@ -2226,7 +2226,7 @@ document.querySelectorAll(".play").forEach(btn => {
             return;
         }
 
-        player.src = "song/" + this.dataset.song;
+        player.src = this.dataset.song;
         player.play();
 
         this.innerHTML = "⏸ Pause";
